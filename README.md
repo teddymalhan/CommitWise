@@ -1,6 +1,4 @@
 # Git Tutorial Maker 
-
-![image1 2](https://github.com/user-attachments/assets/7a1a43ba-58c6-436d-bd42-b49b1be07333)
 ![Screenshot 2024-08-23 at 19 08 18](https://github.com/user-attachments/assets/7e56b840-77d4-49d4-ab64-80357ae4f8da)
 
 
