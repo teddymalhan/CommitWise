@@ -1,3 +1,3 @@
 Git Tutorial Maker 
 
-![image1](https://github.com/user-attachments/assets/a5d32151-4f43-4b56-b88b-cb8a5ba5fd1f)
+![image1 2](https://github.com/user-attachments/assets/7a1a43ba-58c6-436d-bd42-b49b1be07333)
