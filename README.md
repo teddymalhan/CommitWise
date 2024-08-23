@@ -80,12 +80,3 @@ Please make sure to follow the [contribution guidelines](CONTRIBUTING.md) when s
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- Thanks to the open-source community for their valuable tools and libraries.
-- Special thanks to the AI technology used for generating explanations.
-
----
-
-Feel free to customize this README according to the specific details of your project. This template is designed to give users a comprehensive understanding of your application while providing clear instructions on how to install, use, and contribute to it.
