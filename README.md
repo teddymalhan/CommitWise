@@ -22,28 +22,28 @@ To install and run CommitWise, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/gittutorialmaker.git
+    git clone https://github.com/teddymalhan/commitwise.git
     ```
    
 2. **Navigate to the Project Directory**:
     ```bash
-    cd gittutorialmaker
+    cd commitwise/frontend
     ```
 
 3. **Install the Required Dependencies**:
     ```bash
-    pip install -r requirements.txt
+    pnpm i
     ```
 
 4. **Run the Application**:
     ```bash
-    python app.py
+    pnpm run dev
     ```
 
 ## Usage
 
 1. **Open the Application**:
-    Once the application is running, open your browser and navigate to `http://localhost:5000`.
+    Once the application is running, open your browser and navigate to `http://localhost:3000`.
 
 2. **Input the GitHub Repository URL**:
     Enter the URL of the GitHub repository you want to create a tutorial for.
