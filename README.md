@@ -1,11 +1,11 @@
-# Git Tutorial Maker 
+# CommitWise 
 ![Screenshot 2024-08-23 at 19 08 18](https://github.com/user-attachments/assets/7e56b840-77d4-49d4-ab64-80357ae4f8da)
 
 
 
 ## Overview
 
-**Git Tutorial Maker** is a powerful tool that allows developers to create interactive tutorials directly from a GitHub repository. This application simplifies the process of teaching and learning by enabling users to attach explanations and code sections to specific commits in a Git repository. It also supports AI-powered explanations to assist in generating detailed and understandable content.
+**CommitWise** is a powerful tool that allows developers to create interactive tutorials directly from a GitHub repository. This application simplifies the process of teaching and learning by enabling users to attach explanations and code sections to specific commits in a Git repository. It also supports AI-powered explanations to assist in generating detailed and understandable content.
 
 ## Features
 
@@ -18,7 +18,7 @@
 
 ## Installation
 
-To install and run Git Tutorial Maker, follow these steps:
+To install and run CommitWise, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
