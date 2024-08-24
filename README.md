@@ -61,13 +61,6 @@ Here’s an overview of the database design used in CommitWise. This design help
 
 ![Database Design](https://github.com/user-attachments/assets/f32f4af4-fa04-4b99-a788-4bf5511f806c)
 
-## Examples
-
-Here’s a simple example to get you started:
-
-- **Repository**: [Sample GitHub Repo](https://github.com/yourusername/sample-repo)
-- **Tutorial**: This tutorial walks through the basic setup and configuration of a Python project, including setting up a virtual environment, installing dependencies, and creating a basic Python script.
-
 ## Contribution
 
 We welcome contributions from the community! To contribute:
