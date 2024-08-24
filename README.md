@@ -59,7 +59,7 @@ To install and run CommitWise, follow these steps:
 
 Here’s an overview of the database design used in CommitWise. This design helps to efficiently manage and link tutorial data with Git commits.
 
-![Database Design](https://github.com/user-attachments/assets/f32f4af4-fa04-4b99-a788-4bf5511f806c))
+![Database Design](https://github.com/user-attachments/assets/f32f4af4-fa04-4b99-a788-4bf5511f806c)
 
 ## Examples
 
