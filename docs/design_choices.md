@@ -1,7 +1,3 @@
-Here's a draft for the **Software Design Choices** document that you can include in your project's documentation. This document provides an overview of the key design decisions made while developing **CommitWise**.
-
----
-
 # Software Design Choices
 
 ## Overview
@@ -117,7 +113,3 @@ This document outlines the key software design choices made during the developme
 ## Conclusion
 
 These software design choices ensure that **CommitWise** is built with scalability, maintainability, and performance in mind. By integrating industry-standard technologies and best practices, the application is well-prepared for production use and can easily evolve to meet future requirements.
-
----
-
-You can place this document in your `docs/` directory under the name `design_choices.md` or another relevant file name. This will serve as a comprehensive reference for your design decisions and demonstrate your understanding of software architecture to potential employers or collaborators.
