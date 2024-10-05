@@ -1,4 +1,5 @@
-# CommitWise 
+# CommitWise
+
 ![Screenshot 2024-08-23 at 19 08 18](https://github.com/user-attachments/assets/7e56b840-77d4-49d4-ab64-80357ae4f8da)
 
 ## Overview
@@ -19,41 +20,42 @@
 To install and run CommitWise, follow these steps:
 
 1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/teddymalhan/commitwise.git
-    ```
-   
+   ```bash
+   git clone https://github.com/teddymalhan/commitwise.git
+   ```
 2. **Navigate to the Project Directory**:
-    ```bash
-    cd commitwise/frontend
-    ```
+
+   ```bash
+   cd commitwise/frontend
+   ```
 
 3. **Install the Required Dependencies**:
-    ```bash
-    pnpm i
-    ```
+
+   ```bash
+   pnpm i
+   ```
 
 4. **Run the Application**:
-    ```bash
-    pnpm run dev
-    ```
+   ```bash
+   pnpm run dev
+   ```
 
 ## Usage
 
 1. **Open the Application**:
-    Once the application is running, open your browser and navigate to `http://localhost:3000`.
+   Once the application is running, open your browser and navigate to `http://localhost:3000`.
 
 2. **Input the GitHub Repository URL**:
-    Enter the URL of the GitHub repository you want to create a tutorial for.
+   Enter the URL of the GitHub repository you want to create a tutorial for.
 
 3. **Fetch Commits**:
-    The app will fetch all commits from the repository and display them in a timeline.
+   The app will fetch all commits from the repository and display them in a timeline.
 
 4. **Attach Explanations**:
-    Select a commit to attach an explanation. You can write your own or use the AI-generated suggestion.
+   Select a commit to attach an explanation. You can write your own or use the AI-generated suggestion.
 
 5. **Generate and Share**:
-    After you've finished, you can export the tutorial and share it with others.
+   After you've finished, you can export the tutorial and share it with others.
 
 ## Database Design
 
