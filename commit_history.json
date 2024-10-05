@@ -1,0 +1,99 @@
+[
+    {
+        "commit_message": "added story_points",
+        "diffs": []
+    },
+    {
+        "commit_message": "Merge pull request #4 from teddymalhan/backend_setup\n\nsetup the backend folder with files",
+        "diffs": []
+    },
+    {
+        "commit_message": "setup the backend folder with files",
+        "diffs": []
+    },
+    {
+        "commit_message": "Merge pull request #3 from teddymalhan/gitdiff-button-work\n\nsetup the backend folder and added docs for the software design choices",
+        "diffs": []
+    },
+    {
+        "commit_message": "setup the backend folder and added docs for the software design choices",
+        "diffs": []
+    },
+    {
+        "commit_message": "Merge pull request #2 from teddymalhan/gitdiff-button-work\n\nadded the dockerfile for the frontend",
+        "diffs": []
+    },
+    {
+        "commit_message": "added the dockerfile for the frontend",
+        "diffs": []
+    },
+    {
+        "commit_message": "Merge pull request #1 from teddymalhan/gitdiff-button-work\n\nmade the buttons work",
+        "diffs": []
+    },
+    {
+        "commit_message": "made the buttons to work with useState, currently using hard-coded values in an array; will update using a database in the next commit",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Update README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "Create README.md",
+        "diffs": []
+    },
+    {
+        "commit_message": "initialized repository and made the basic design",
+        "diffs": [
+            {
+                "file_path": "frontend/lib/utils.ts",
+                "diff": "@@ -1,6 +1,6 @@\n-import { type ClassValue, clsx } from \"clsx\"\n-import { twMerge } from \"tailwind-merge\"\n+import { type ClassValue, clsx } from \"clsx\";\n+import { twMerge } from \"tailwind-merge\";\n \n export function cn(...inputs: ClassValue[]) {\n-  return twMerge(clsx(inputs))\n+  return twMerge(clsx(inputs));\n }\n"
+            },
+            {
+                "file_path": "frontend/tailwind.config.ts",
+                "diff": "@@ -1,13 +1,13 @@\n-import type { Config } from \"tailwindcss\"\n+import type { Config } from \"tailwindcss\";\n \n const config = {\n   darkMode: [\"class\"],\n   content: [\n-    './pages/**/*.{ts,tsx}',\n-    './components/**/*.{ts,tsx}',\n-    './app/**/*.{ts,tsx}',\n-    './src/**/*.{ts,tsx}',\n-\t],\n+    \"./pages/**/*.{ts,tsx}\",\n+    \"./components/**/*.{ts,tsx}\",\n+    \"./app/**/*.{ts,tsx}\",\n+    \"./src/**/*.{ts,tsx}\",\n+  ],\n   prefix: \"\",\n   theme: {\n     container: {\n@@ -75,6 +75,6 @@ const config = {\n     },\n   },\n   plugins: [require(\"tailwindcss-animate\")],\n-} satisfies Config\n+} satisfies Config;\n \n-export default config\n\\ No newline at end of file\n+export default config;\n"
+            }
+        ]
+    }
+]

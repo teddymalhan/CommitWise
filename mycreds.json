@@ -1,0 +1,8 @@
+{
+  "engine": "aurora-postgresql",
+  "username": "myuser",
+  "password": "mypassword",
+  "host": "localhost",
+  "dbname": "test",
+  "port": "4510"
+}

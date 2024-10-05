@@ -1,0 +1,14 @@
+$ awslocal sqs create-queue --queue-name my-queue
+
+$ awslocal sns create-topic --name my-topic
+
+$ awslocal sns subscribe --topic-arn "arn:aws:sns:us-east-1:000000000000:my-topic" \
+    --protocol sqs \
+    --notification-endpoint "arn:aws:sqs:us-east-1:000000000000:my-queue" \
+    --attributes "{\"RawMessageDelivery\": \"true\"}"
+
+$ awslocal sns set-subscription-attributes \
+      --subscription-arn "arn:aws:sns:us-east-1:000000000000:my-topic:8f0cbf7f-adae-4cdb-8fa4-a96ba257460e" \
+      --attribute-name RawMessageDelivery \
+      --attribute-value "true"
+
