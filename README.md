@@ -14,33 +14,8 @@
 - **Commit-Based Sections**: Link specific commits to tutorial sections, allowing users to see code changes in context.
 - **AI-Assisted Explanations**: Use AI to generate explanations for the code, making it easier to understand complex logic.
 - **Easy Integration**: Pass in the link to a GitHub repository, and the app will automatically fetch all the commits.
-- **Customizable Content**: Write your own explanations or use the AI suggestions to enhance your tutorials.
+- **Customizable Content**: Write your own explanations (future features planner) or use the AI suggestions to enhance your tutorials.
 - **User-Friendly Interface**: Navigate through the tutorial using an intuitive interface that highlights both the code and explanations.
-
-## Installation
-
-To install and run CommitWise, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/teddymalhan/commitwise.git
-   ```
-2. **Navigate to the Project Directory**:
-
-   ```bash
-   cd commitwise/frontend
-   ```
-
-3. **Install the Required Dependencies**:
-
-   ```bash
-   pnpm i
-   ```
-
-4. **Run the Application**:
-   ```bash
-   pnpm run dev
-   ```
 
 ## Usage
 
