@@ -17,13 +17,11 @@
 
 - **Task**: Set up the initial project structure for the backend, including repositories, Docker setup, and integration with AWS.
 - **Subtasks**:
-  - [x] Initialize a new Git repository for the backend (1 SP).
-  - [x] Set up Docker for microservices (2 SP).
-  - [x] Configure basic AWS services (RDS, DynamoDB, S3, ElastiCache) (2 SP).
+  -  Initialize a new Git repository for the backend (1 SP).
+  -  Set up Docker for microservices (2 SP).
+  -  Configure basic AWS services (RDS, DynamoDB, S3, ElastiCache) (2 SP).
 
 #### 2. **User Management Service (10 Story Points)**
-
-    (I'll be doing this task later as I'll be the only user for now)
 
 - **Task**: Implement user authentication and management, ensuring secure access to the application.
 - **Subtasks**:
@@ -36,8 +34,8 @@
 - **Task**: Develop a service to fetch and store commits from GitHub repositories.
 - **Subtasks**:
   - Integrate with the GitHub API to fetch commit history (3 SP).
-  - [x] Store commit data in DynamoDB (2 SP).
-  - [x]Expose an API endpoint to retrieve commits (3 SP).
+  - Store commit data in DynamoDB (2 SP).
+  - Expose an API endpoint to retrieve commits (3 SP).
 
 #### 4. **Diff Parser Service (10 Story Points)**
 
