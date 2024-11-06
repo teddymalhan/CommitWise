@@ -1,0 +1,13 @@
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/cmake/RdKafka/RdKafkaConfig.cmake
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/cmake/RdKafka/RdKafkaConfigVersion.cmake
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/cmake/RdKafka/FindLZ4.cmake
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/cmake/RdKafka/RdKafkaTargets.cmake
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/cmake/RdKafka/RdKafkaTargets-debug.cmake
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/share/licenses/librdkafka/LICENSES.txt
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/pkgconfig/rdkafka-static.pc
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/librdkafka.a
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/include/librdkafka/rdkafka.h
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/include/librdkafka/rdkafka_mock.h
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/pkgconfig/rdkafka++-static.pc
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/lib/librdkafka++.a
+/Users/teddym/side_projects/commitwise/backend/rust_worker/target/debug/build/rdkafka-sys-ac72a319191d5b03/out/include/librdkafka/rdkafkacpp.h

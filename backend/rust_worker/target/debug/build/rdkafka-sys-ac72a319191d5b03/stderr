@@ -1,0 +1,24 @@
+Building and linking librdkafka statically
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ASM_COMPILER
+    CMAKE_ASM_FLAGS
+
+
+gmake: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+/Users/teddym/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rdkafka-sys-4.7.0+2.3.0/librdkafka/src/rdkafka_request.c:2940:29: warning: format specifies type 'long' but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+                            session_lifetime_ms);
+                            ^~~~~~~~~~~~~~~~~~~
+/Users/teddym/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rdkafka-sys-4.7.0+2.3.0/librdkafka/src/rdkafka_int.h:886:66: note: expanded from macro 'rd_kafka_dbg'
+                                      (RD_KAFKA_DBG_##ctx), fac, __VA_ARGS__); \
+                                                                 ^~~~~~~~~~~
+1 warning generated.

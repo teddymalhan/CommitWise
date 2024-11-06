@@ -1,0 +1,14 @@
+[package]
+name = "rust_worker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rdkafka = { version = "0.29", features = ["cmake-build"] }
+tokio = { version = "1.41.0", features = ["full"] }
+futures = "0.3"
+aws_sdk_s3 = "0.25.0" # Or the latest version
+aws-config = "0.25.0" # AWS configuration crate
+tokio-postgres = { version = "0.7", features = ["with-chrono-0_4"] }
+git2 = "0.14"
+tempfile = "3.3.0"
