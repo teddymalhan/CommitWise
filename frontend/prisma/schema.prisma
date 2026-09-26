@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
   previewFeatures = ["driverAdapters"]
@@ -15,10 +9,39 @@ datasource db {
 }
 
 model Project {
-  id          Int      @id @default(autoincrement())
+  id        Int      @id @default(autoincrement())
   name      String
   branch    String
   model     String
-  url      String
+  url       String
+  createdAt DateTime @default(now())
+}
+
+model Session {
+  id        String     @id @default(cuid())
+  repoUrl   String
+  repoName  String
+  role      String
+  difficulty String
+  status    String     @default("active")
+  overall   Int?
+  summary   String?
+  createdAt DateTime   @default(now())
+  questions Question[]
+}
+
+model Question {
+  id        String   @id @default(cuid())
+  sessionId String
+  session   Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  idx       Int
+  type      String
+  prompt    String
+  context   String?
+  answer    String?
+  rating    Int?
+  strengths Json?
+  improvements Json?
+  ideal     String?
   createdAt DateTime @default(now())
 }
