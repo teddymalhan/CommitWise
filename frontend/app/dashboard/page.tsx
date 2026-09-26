@@ -98,7 +98,7 @@ export default function Dashboard() {
             <div className="w-20 bg-gray-800 flex flex-col items-center py-4 border-r-4 border-black">
                 {sideMenuItems.map((item, index) => (
                     <div key={index} className={`mb-4 p-2 ${item.color} rounded-lg border-4 border-black`}>
-                        <Button variant="ghost" size="icon" className="text-white">
+                        <Button variant="neutral" size="icon" className="text-white">
                             <item.icon className="h-6 w-6" />
                             <span className="sr-only">{item.label}</span>
                         </Button>
@@ -113,7 +113,7 @@ export default function Dashboard() {
                     <div className="w-1/3"></div>
                     <Link href="/"><h1 className="text-2xl font-bold">CommitWise</h1></Link>
                     <div className="w-1/3 flex justify-end">
-                        <Button variant="ghost" size="icon" className="text-white hover:bg-red-600">
+                        <Button variant="neutral" size="icon" className="text-white hover:bg-red-600">
                             <User className="h-6 w-6" />
                             <span className="sr-only">User profile</span>
                         </Button>
@@ -143,11 +143,11 @@ export default function Dashboard() {
                                     </div>
                                     <div className="flex justify-between mt-4">
                                         <Link href={`/project/${project.id}`}>
-                                        <Button variant="outline" className="flex-grow mr-2 border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white">
+                                        <Button variant="neutral" className="flex-grow mr-2 border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white">
                                             Open Project
                                         </Button>
                                         </Link>
-                                        <Button variant="outline" className="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white" onClick={() => deleteProject(project.id)}>
+                                        <Button variant="neutral" className="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white" onClick={() => deleteProject(project.id)}>
                                             <Trash2 className="h-5 w-5" />
                                         </Button>
                                     </div>
@@ -192,7 +192,7 @@ export default function Dashboard() {
                                         <Label htmlFor="branch" className="text-right text-white">
                                             Branch
                                         </Label>
-                                        <Select onValueChange={setSelectedBranch} disabled={!isUrlValid}>
+                                        <Select onValueChange={(v: unknown) => setSelectedBranch(typeof v === "string" ? v : "")} disabled={!isUrlValid}>
                                             <SelectTrigger className="col-span-3 bg-gray-800 text-white border-2 border-green-500">
                                                 <SelectValue placeholder="Select branch" />
                                             </SelectTrigger>
@@ -207,7 +207,7 @@ export default function Dashboard() {
                                         <Label htmlFor="model" className="text-right text-white">
                                             Model
                                         </Label>
-                                        <Select onValueChange={setSelectedModel} disabled={!isUrlValid}>
+                                        <Select onValueChange={(v: unknown) => setSelectedModel(typeof v === "string" ? v : "")} disabled={!isUrlValid}>
                                             <SelectTrigger className="col-span-3 bg-gray-800 text-white border-2 border-green-500">
                                                 <SelectValue placeholder="Select model" />
                                             </SelectTrigger>
