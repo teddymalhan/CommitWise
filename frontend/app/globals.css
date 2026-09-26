@@ -1,33 +1,128 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* next-themes toggles a `dark` class on <html> (attribute="class"), and the old
+   v3 config used darkMode: ['class']. Tailwind v4's dark variant defaults to
+   `prefers-color-scheme`, so rebind it to the class. */
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Every plain rule below lives in @layer base on purpose.
+  Tailwind v4 emits its output into real cascade layers (base < components <
+  utilities). Unlayered CSS wins over *all* layers regardless of specificity, so
+  a top-level `* { margin: 0; padding: 0 }` silently defeats every spacing
+  utility (px-*, py-*, m-*, mx-auto, space-y-*). Keep custom CSS inside @layer
+  base so utilities can still override it.
+*/
+
+@theme inline {
+  --color-main: var(--main);
+  --color-background: var(--background);
+  --color-secondary-background: var(--secondary-background);
+  --color-foreground: var(--foreground);
+  --color-main-foreground: var(--main-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-overlay: var(--overlay);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --spacing-boxShadowX: 4px;
+  --spacing-boxShadowY: 4px;
+  --spacing-reverseBoxShadowX: -4px;
+  --spacing-reverseBoxShadowY: -4px;
+  --radius-base: 5px;
+  --font-weight-base: 500;
+  --font-weight-heading: 700;
+  --shadow-shadow: var(--shadow);
+  --animate-marquee: marquee 5s linear infinite;
+  --animate-marquee2: marquee2 5s linear infinite;
 }
 
-body {
-  --sb-track-color: #ffffff;
-  --sb-thumb-color: #000000;
-  @apply text-text dark:text-darkText;
-}
+@layer base {
+  :root {
+    color-scheme: light;
+    --background: hsl(214, 95%, 93%);
+    --secondary-background: oklch(100% 0 0);
+    --main: hsl(217, 100%, 66%);
+    --ring: oklch(0% 0 0);
+    --foreground: oklch(0% 0 0);
+    --main-foreground: oklch(0% 0 0);
+    --border: oklch(0% 0 0);
+    --overlay: oklch(0% 0 0 / 0.8);
+    --shadow: 4px 4px 0px 0px var(--border);
+    --chart-1: #5294FF;
+    --chart-2: #FF4D50;
+    --chart-3: #FACC00;
+    --chart-4: #05E17A;
+    --chart-5: #7A83FF;
+    --chart-active-dot: #000;
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #000000;
+  }
 
-body::-webkit-scrollbar {
-  width: 16px;
-}
+  .dark {
+    color-scheme: dark;
+    --background: oklch(21% 0.03 256);
+    --secondary-background: oklch(28% 0.03 256);
+    --main: hsl(217, 100%, 66%);
+    --ring: oklch(96% 0.005 250);
+    --foreground: oklch(96% 0.005 250);
+    --main-foreground: oklch(0% 0 0);
+    --border: oklch(96% 0.005 250);
+    --overlay: oklch(0% 0 0 / 0.8);
+    --shadow: 4px 4px 0px 0px var(--border);
+    --chart-active-dot: #ffffff;
+    --sb-track-color: oklch(28% 0.03 256);
+    --sb-thumb-color: oklch(96% 0.005 250);
+  }
 
-body::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
-}
-
-@supports not selector(::-webkit-scrollbar) {
   body {
-    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    font-weight: var(--font-weight-base);
+    color: var(--foreground);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-heading);
+  }
+
+  body::-webkit-scrollbar,
+  .scrollbar::-webkit-scrollbar {
+    width: 16px;
+  }
+  body::-webkit-scrollbar-track,
+  .scrollbar::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+  }
+  body::-webkit-scrollbar-thumb,
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    body,
+    .scrollbar {
+      scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+  }
+}
+
+@theme inline {
+  @keyframes marquee {
+  0% {
+    transform: translateX(0%);
+    }
+  100% {
+    transform: translateX(-100%);
+    }
+  }
+  @keyframes marquee2 {
+  0% {
+    transform: translateX(100%);
+    }
+  100% {
+    transform: translateX(0%);
+    }
   }
 }
